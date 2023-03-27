@@ -2,7 +2,7 @@
 [DEMO](https://apetrinko.github.io/vue-calendar/)
 
 ## Description
-<p> This is a simple calendar that allows users to switch between months and displays the current time in London. The current date is highlighted in orange color, while days with events are colored in light orange.</p>
+<p> This is a simple calendar that allows users to switch between months and displays the current time in London. The current date is highlighted in yellow color, while days with events are colored in light orange.</p>
 
 ## Stack of technologies I used:
 <p align="left">
