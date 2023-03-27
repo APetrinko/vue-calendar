@@ -53,10 +53,6 @@ export default {
     getEventsForDay(day) {
       return this.events.filter(event => isSameDay(event.start, day));
     },
-    currentTime() {
-      let now = new Date();
-      return `${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
-    }
   }
 };
 </script>
