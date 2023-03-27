@@ -1,14 +1,38 @@
 # vue-calendar
+[DEMO](https://apetrinko.github.io/vue-calendar/)
 
-This template should help get you started developing with Vue 3 in Vite.
+## Description
+<p> This is a simple calendar that allows users to switch between months and displays the current time in London. The current date is highlighted in orange color, while days with events are colored in light orange.</p>
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Stack of technologies I used:
+<p align="left">
+  <a href="https://vuejs.org/" target="_blank" rel="noreferrer">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png" align="center" alt="html5" width="40" height="40"/>
+  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> 
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" align="center" alt="javascript" width="40" height="40"/> 
+  </a> 
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer"> 
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/240px-CSS3_logo.svg.png" align="center" alt="javascript" width="40" height="40"/> 
+  </a> 
+  <a href="https://www.w3schools.com/html/" target="_blank" rel="noreferrer"> 
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png" align="center" alt="javascript" width="40" height="40"/> 
+  </a> 
+  <a href="https://bulma.io/" target="_blank" rel="noreferrer"> 
+    <img src="https://bulma.io/images/bulma-logo.png" align="center" alt="javascript" width="auto" height="40"/> 
+  </a> 
+  <a href="https://date-fns.org/" target="_blank" rel="noreferrer"> 
+    <img src="https://blog.date-fns.org/assets/AQADAgATv-m3DgAEms4Szlwc8yiURQMAAQI" align="center" alt="javascript" width="auto" height="40"/> 
+  </a> 
+</p>
+<ul>
+<li>VueJs</li>
+<li>JavaScript</li>
+<li>CSS</li>
+<li>HTML</li>
+<li>Bulma library</li>
+<li>date-fns</li>
+</ul>
 
 ## Project Setup
 
