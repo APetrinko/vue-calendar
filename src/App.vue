@@ -75,8 +75,8 @@ export default {
       </thead>
       <tbody>
         <tr v-for="week in weeks" :key="week">
-          <td v-for="day in week" :key="day"
-            :class="{ 'has-event': getEventsForDay(day).length, 'is-today': isToday(day) }">
+          <td v-for="day in week" :key="day" class="day"
+            :class="{ 'is-info': getEventsForDay(day).length, 'is-warning': isToday(day) }">
             <div v-if="day && day.getMonth() === currentMonth.getMonth()">
               {{ formatDate(day, 'd') }}
             </div>
@@ -103,6 +103,7 @@ export default {
 </template>
 
 <style>
+
 .header {
   display: flex;
   justify-content: space-around;
@@ -117,26 +118,15 @@ export default {
   align-items: center;
 }
 
-td {
-  text-align: center;
-  height: 60px;
+.day {
+  height: 100px;
+  width: 100px;
 }
 
-td:hover {
-  background-color: aqua;
+.day:hover {
+  background-color: rgb(177, 177, 177);
+  color: white;
   cursor: pointer;
-}
-
-.has-event {
-  background-color: orange;
-}
-
-.has-event:hover {
-  background-color: red;
-}
-
-.is-today {
-  background-color: yellow;
 }
 
 .events {

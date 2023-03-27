@@ -4,7 +4,7 @@
 ## [DEMO link](https://apetrinko.github.io/vue-calendar/)
 
 ## Description
-<p> This is a simple calendar that allows users to switch between months and displays the current time in London. The current date is highlighted in yellow color, while days with events are colored in light orange.</p>
+<p> This is a simple calendar that allows users to switch between months and displays the current time in London. The current date is highlighted in yellow color, while days with events are colored in blue.</p>
 
 ## Stack of technologies I used:
 <p align="left">
@@ -36,19 +36,28 @@
 <li>date-fns</li>
 </ul>
 
-## Project Setup
+## To run the project locally, follow these steps:
+
+<ul>
+<li>Clone the repository to your local machine</li>
+<li>Open the project</li>
+<li>Install the necessary packages</li>
+</ul>
 
 ```sh
 npm install
 ```
-
-### Compile and Hot-Reload for Development
+<ul>
+<li>Compile and Hot-Reload for Development</li>
+</ul>
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+<ul>
+<li>Compile and Minify for Production</li>
+</ul>
 
 ```sh
 npm run build
