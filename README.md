@@ -1,5 +1,4 @@
 # vue-calendar
-[DEMO](https://apetrinko.github.io/vue-calendar/)
 
 ## [DEMO link](https://apetrinko.github.io/vue-calendar/)
 
