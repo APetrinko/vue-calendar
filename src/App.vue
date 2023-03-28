@@ -12,12 +12,15 @@ export default {
       daysOfWeek: ["Понеділок", "Вівторок", "Середа", "Четвер", "П'ятниця", "Субота", "Неділя"],
       events: [
         {
-          start: new Date("2023-03-26T14:00:00+02:00"),
-          end: new Date("2023-03-26T15:00:00+02:00"),
-          timezone: "Europe/Kiev",
-          title: "Some Event"
+          start: utcToZonedTime(new Date("2023-03-26T14:00:00+03:00"), 'Europe/Kiev'),
+          end: utcToZonedTime(new Date("2023-03-26T15:00:00+03:00"), 'Europe/Kiev'),
+          timeZone: 'Europe/London',
+          title: "Some Event",
+          startInLondon: utcToZonedTime(new Date("2023-03-26T12:00:00+01:00"), 'Europe/London'),
+          endInLondon: utcToZonedTime(new Date("2023-03-26T13:00:00+01:00"), 'Europe/London'),
+
         }
-      ]
+      ],
     };
   },
   computed: {
@@ -32,7 +35,7 @@ export default {
       }
 
       return weeks;
-    }
+    },
   },
   methods: {
     capitalizeFirstLetter(string) {
@@ -95,7 +98,9 @@ export default {
       <thead>
         <tr>
           <td class="notification is-info is-light" v-for="event in events">{{ event.title }}</td>
-          <td class="notification is-warning is-light" v-for="time in events">{{ time.start }}</td>
+          <td class="notification is-warning is-light" v-for="time in events">
+            {{ formatDate(time.startInLondon, 'dd MMMM HH:mm') }} - {{ formatDate(time.endInLondon, 'dd MMMM HH:mm') }}
+          </td>
         </tr>
       </thead>
     </table>
@@ -103,7 +108,6 @@ export default {
 </template>
 
 <style>
-
 .header {
   display: flex;
   justify-content: space-around;
